@@ -1,0 +1,2 @@
+gcc  md5_src/md5c.c server.c -o server
+gcc client.c -o client

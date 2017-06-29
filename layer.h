@@ -1,8 +1,8 @@
 #ifndef _LAYER_H_INCLUDED_
 #define _LAYER_H_INCLUDED_
 
-#include "global.h"
-#include "md5.h"
+#include "md5_src/global.h"
+#include "md5_src/md5.h"
 
 #define MD_CTX MD5_CTX
 #define MDInit MD5Init
@@ -27,7 +27,7 @@ typedef struct{
 
 typedef struct{
   int type;
-  int le;
+  int len;
   char digest[16];
 }TCPHeader;
 
